@@ -1,6 +1,6 @@
 %h2 Photogallery
 %u1
--for image in @images
+-@images.each do |image|
   %li
     %a{href: "/image/#{image.id}"}=image.title
     %a{href: "/image/#{image.id}"}
